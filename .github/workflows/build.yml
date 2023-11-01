@@ -2,7 +2,7 @@ name: build
 on:
   push:
     branches:
-      - "smartmon"
+      - "fork"
     tags:
       - 'v*'
 jobs:
