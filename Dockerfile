@@ -35,7 +35,7 @@ RUN apt-get -q update && \
         https://github.com/prometheus-community/node-exporter-textfile-collector-scripts.git \
         /scripts && \
     chmod 755 /scripts/* && \
-    sed -i 's:sat) /usr/sbin/smartctl:sat|sntasmedia) /usr/sbin/smartctl:g' smartmon.sh && \
+    sed -i 's:sat) /usr/sbin/smartctl:sat|sntasmedia) /usr/sbin/smartctl:g' /scripts/smartmon.sh && \
     /usr/sbin/update-smart-drivedb && \
     apt-get remove -y gpg git gpg-agent && \
     apt-get autoremove -y && \
